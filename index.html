@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
 
 <body>
-    <header class="w-full bg-black flex items-end h-[481px] mb-7">
-        <div class="h-fit">
-            <img class="bottom-0 h-50" src="images/banner-image/pic01.png" alt="">
+    <header class="w-full bg-black grid grid-cols-4 gap-2 h-[80vh] mb-7 ">
+        <div class="relative">
+            <img class="absolute bottom-[-25px]" src="images/banner-image/pic01.png" alt="">
         </div>
-        <div class="text-center h-full">
-            <h1 class="text-3xl text-[#FF5E19] align-middle">
+        <div class="text-center col-span-2 my-auto">
+            <h1 class="text-6xl text-[#FF5E19] align-middle">
                 Select Your Best Five
             </h1>
             <p class="text-base text-[#FFFFFF]">
@@ -22,16 +24,118 @@
                 distinctio!
             </p>
         </div>
-        <div>
-            <img class="w-full" src="images/banner-image/pic02.png" alt="">
-            <img class="relative w-full" src="images/banner-image/pic03.png" alt="">
-            <img class="absolute insert-px" src="images/banner-image/pic04.png" alt="">
-
+        <div class="relative">
+            <img class="w-[70%] absolute top-[20px] right-[100px]" src="images/banner-image/pic02.png" alt="">
+            <img class="absolute bottom-0 right-0" src="images/banner-image/pic03.png" alt="">
+            <img class="absolute top-[350px] right-0" src="images/banner-image/pic04.png" alt="">
         </div>
+
     </header>
     <main>
-        <section>
+        <section class="w-9/12 mx-auto mt-10">
+            <div class="grid  grid-cols-3 gap-4">
+                <div class="grid col-span-2 grid-cols-3 gap-4 ">
 
+                    <div class="card card-compact bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact  bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact  bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="grid col-span-2 grid-cols-3 gap-4 ">
+
+                    <div class="card card-compact bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact  bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-compact  bg-base-100 shadow-xl text-center">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class=" relative bg-sky-500">
+                <div class="">
+                    <h2> Selected File</h2>
+                </div>
+            </div>
+            </div>
         </section>
     </main>
 </body>
