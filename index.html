@@ -139,12 +139,63 @@
                         </div>
                     </div>
 
+                    <div class="budget ">
+                        <h2 class="text-center mt-6 bg-white">Budget</h2>
+
+                        <div class="pl-[40px] py-2 ">
+                            <!-- per player cost -->
+                            <div class="text-center">
+                                <div class="flex py-2 pb-4">
+                                    <span class="px-2">Per player</span>
+                                    <input id="per-player-budget" type="text" class="w-[60%]" />
+                                </div>
+                                <p id="error-messege" class="notify" style="display: none;">❌ Please Enter a Number ❌
+                                </p>
+                                <p id="positive-messege" class="notify" style="display: none;">❌ Please Enter a Positive
+                                    Number
+                                    ❌
+                                </p>
+
+                                <button id="calculate-btn" class="btn btn-primary btn-sm px-8">Calculate</button>
+                            </div>
+                            <!-- total cost -->
+                            <div class="text-center">
+                                <div class="flex justify-between py-2 pb-4 pr-[50px]">
+                                    <span class="px-2">Per Expenses</span> <span id="playerExpenses"></span>
+                                </div>
+                                <div class="flex py-2 justify-between  pr-[50px]">
+                                    <span class="px-2">Manager</span>
+                                    <input id="manager-budget" type="text" class="w-[60%]" />
+                                </div>
+
+                                <div class="flex py-2 justify-between  pr-[50px]">
+                                    <span class="px-2">Coach</span>
+                                    <input id="coach-budget" type="text" class="w-[60%]" />
+                                </div>
+                                <p id="error-manager" class="notify" style="display: none;">❌ Please Enter a Number ❌
+                                </p>
+
+                                <button id="total-calculate" class="btn btn-primary btn-sm px-8">Calculate
+                                    total
+                                </button>
+                                <div class="flex py-2 justify-between  pr-[50px] ">
+                                    <span class="px-2">Total</span> <span id="total-cost"></span>
+
+                                </div>
+                                <button id="reset-btn" class="btn-sm btn btn-primary">Reset</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-
+            </div>
 
         </section>
     </main>
+    <script src="./Js//app.js"></script>
 </body>
 
 </html>
