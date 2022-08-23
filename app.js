@@ -8,7 +8,7 @@ const coachBudget = document.getElementById('coach-budget');
 
 const totalExpence = document.getElementById('total-cost');
 
-document.getElementById('total-calculate').style.opacity = "0.2";
+document.getElementById('total-calculate').style.opacity = "0.5";
 
 
 // Function CAN cheak the value string or number
