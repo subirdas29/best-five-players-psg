@@ -47,7 +47,40 @@
                                 <p>122 Assist</p>
                             </div>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg "
+                                    onclick="selectToPlayer(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-compact  bg-black shadow-xl text-center rounded-none">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Naymer</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg"
+                                    onclick="selectToPlayer(this)">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-compact  bg-black shadow-xl text-center rounded-none">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Mbappe</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg"
+                                    onclick="selectToPlayer(this)">Select</button>
                             </div>
                         </div>
                     </div>
@@ -82,6 +115,20 @@
                         </div>
                     </div>
 
+                    <div class="card card-compact  bg-black shadow-xl text-center rounded-none">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card card-compact  bg-black shadow-xl text-center rounded-none">
                         <figure><img src="images/messi.png" alt="Shoes" /></figure>
                         <div class="card-body">
@@ -132,11 +179,33 @@
                 <div>
 
                     <div class="header bg-black p-4">
-                        <h2 class="text-center my-2">Selected top Five</h2>
-                        <div class="playerList pl-[40px] text-start">
-                            <p>1. <span>player 3 </span></p>
-                            <p>player 1</p>
-                            <p>pla cvdcvyer 1</p>
+
+                        <div class="playerList text-start">
+                            <h2 class="text-center my-2 text-xl">Selected top Five
+                                <span class="text-blue-500" id="total-added-player">0</span>
+                            </h2>
+                            <div class="overflow-x-auto">
+                                <table class="table w-full">
+                                    <!-- head -->
+                                    <thead>
+
+                                        <tr>
+                                            <th>SL.</th>
+                                            <th>Name</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody id="cart-players">
+                                        <!-- row 1 -->
+                                        <tr>
+                                            <!-- <th>1</th>
+                                            <td>joy</td> -->
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 

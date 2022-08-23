@@ -1,3 +1,51 @@
+const cartArray = [];
+
+function display(cartPlayer) {
+
+    console.log(cartPlayer);
+    const tableBody = document.getElementById("cart-players");
+    tableBody.innerHTML = "";
+
+    for (let i = 0; i < cartPlayer.length; i++) {
+        const name = cartArray[i].playerName;
+        const tr = document.createElement("tr");
+        //   $name
+        tr.innerHTML =
+            `
+            <th>${i + 1}</th>
+            <td>${name}</td>`
+            ;
+        tableBody.appendChild(tr);
+    }
+
+}
+
+function selectToPlayer(player) {
+    const playerName = player.parentNode.parentNode.children[0].innerText;
+
+
+
+
+    if (cartArray.length < 5) {
+
+        const playerobj = {
+            playerName: playerName,
+        }
+
+        cartArray.push(playerobj);
+
+        document.getElementById('error-messege').style.display = "none";
+
+    }
+
+    console.log(cartArray);
+
+    document.getElementById("total-added-player").innerText = cartArray.length;
+    display(cartArray);
+}
+
+
+
 // Initializing value
 const perPlayerBudget = document.getElementById('per-player-budget');
 const playerExpenses = document.getElementById('playerExpenses');
