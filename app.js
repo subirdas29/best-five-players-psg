@@ -2,7 +2,6 @@ const cartArray = [];
 
 function display(cartPlayer) {
 
-    console.log(cartPlayer);
     const tableBody = document.getElementById("cart-players");
     tableBody.innerHTML = "";
 
@@ -23,19 +22,15 @@ function display(cartPlayer) {
 function selectToPlayer(player) {
     const playerName = player.parentNode.parentNode.children[0].innerText;
 
-
-
-
-    if (cartArray.length < 5) {
-
+    if (cartArray.length > 4) {
+        alert("you cannot select more 5")
+    }
+    else {
         const playerobj = {
             playerName: playerName,
         }
-
         cartArray.push(playerobj);
-
-        document.getElementById('error-messege').style.display = "none";
-
+        player.disabled = true;
     }
 
     console.log(cartArray);
@@ -84,7 +79,7 @@ function totalCost(totalPlayerBudget, CB, MB) {
 //update managerBudget
 function handelTotalPlayerBudget(perPlayerBudget) {
 
-    const totalPlayerBudget = perPlayerBudget * 5;
+    const totalPlayerBudget = perPlayerBudget * cartArray.length;
 
 
     // playerExpenses.innerHTML = totalPlayerBudget;
@@ -155,6 +150,8 @@ document.getElementById('reset-btn').addEventListener('click', function () {
     managerBudget.value = '';
     totalExpence.innerText = 0;
     playerExpenses.innerText = 0;
+
+
 
 
     document.getElementById('positive-messege').style.display = "none";

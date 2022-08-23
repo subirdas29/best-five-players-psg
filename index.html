@@ -95,7 +95,8 @@
                                 <p>122 Assist</p>
                             </div>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                                <button onclick="selectToPlayer(this)"
+                                    class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
                             </div>
                         </div>
                     </div>
@@ -110,7 +111,8 @@
                                 <p>122 Assist</p>
                             </div>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                                <button onclick="selectToPlayer(this)"
+                                    class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
                             </div>
                         </div>
                     </div>
@@ -125,7 +127,8 @@
                                 <p>122 Assist</p>
                             </div>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                                <button onclick="selectToPlayer(this)"
+                                    class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
                             </div>
                         </div>
                     </div>
@@ -139,22 +142,8 @@
                                 <p>122 Assist</p>
                             </div>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card card-compact  bg-black shadow-xl text-center rounded-none">
-                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
-                        <div class="card-body">
-                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
-                            <div class="flex flex-between mx-auto gap-2">
-                                <p>36 Goals</p>
-                                <p>.</p>
-                                <p>122 Assist</p>
-                            </div>
-                            <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                                <button onclick="selectToPlayer(this)"
+                                    class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
                             </div>
                         </div>
                     </div>
@@ -169,7 +158,24 @@
                                 <p>122 Assist</p>
                             </div>
                             <div class="card-actions justify-center">
-                                <button class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                                <button onclick="selectToPlayer(this)"
+                                    class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-compact  bg-black shadow-xl text-center rounded-none">
+                        <figure><img src="images/messi.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="text-2xl font-bold text-center">Lionel Messi</h2>
+                            <div class="flex flex-between mx-auto gap-2">
+                                <p>36 Goals</p>
+                                <p>.</p>
+                                <p>122 Assist</p>
+                            </div>
+                            <div class="card-actions justify-center">
+                                <button onclick="selectToPlayer(this)"
+                                    class="btn btn-primary w-[85%] rounded-none text-lg">Select</button>
                             </div>
                         </div>
                     </div>
@@ -210,14 +216,14 @@
                     </div>
 
                     <div class="budget bg-black my-6 p-4">
-                        <h2 class="text-center mt-6">Budget</h2>
+                        <h2 class="text-center mt-6 text-xl">Budget</h2>
 
                         <div class="pl-[40px] py-2 ">
                             <!-- per player cost -->
                             <div class="text-center">
                                 <div class="flex py-2 pb-4">
                                     <span class="px-2">Per player</span>
-                                    <input id="per-player-budget" type="text" class="w-[60%]" />
+                                    <input id="per-player-budget" type="text" class="text-black w-[60%]" />
                                 </div>
                                 <p id="error-messege" class="notify" style="display: none;">❌ Please Enter a Number ❌
                                 </p>
@@ -235,12 +241,12 @@
                                 </div>
                                 <div class="flex py-2 justify-between  pr-[50px]">
                                     <span class="px-2">Manager</span>
-                                    <input id="manager-budget" type="text" class="w-[60%]" />
+                                    <input id="manager-budget" type="text" class="text-black w-[60%]" />
                                 </div>
 
                                 <div class="flex py-2 justify-between  pr-[50px]">
                                     <span class="px-2">Coach</span>
-                                    <input id="coach-budget" type="text" class="w-[60%]" />
+                                    <input id="coach-budget" type="text" class=" text-black w-[60%]" />
                                 </div>
                                 <p id="error-manager" class="notify" style="display: none;">❌ Please Enter a Number ❌
                                 </p>
@@ -250,7 +256,7 @@
                                     total
                                 </button>
                                 <div class="flex py-2 justify-between  pr-[50px] ">
-                                    <span class="px-2">Total</span> <span id="total-cost"></span>
+                                    <span class="px-2">Total</span> <span class="text-red-500" id="total-cost"></span>
 
                                 </div>
                                 <button id="reset-btn" class="btn-sm btn btn-primary">Reset</button>
