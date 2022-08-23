@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css family -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 
 </head>
 
@@ -17,7 +25,7 @@
             <img class="absolute bottom-[-25px]" src="images/banner-image/pic01.png" alt="">
         </div>
         <div class="text-center col-span-2 my-auto">
-            <h1 class="text-6xl text-[#FF5E19] align-middle">
+            <h1 class="text-6xl text-[#FF5E19] align-middle font-['Berkshire_Swash']">
                 Select Best Five Player For PSG
             </h1>
             <p class="text-base text-[#FFFFFF] mt-5">
@@ -187,8 +195,9 @@
                     <div class="header bg-black p-4">
 
                         <div class="playerList text-start">
-                            <h2 class="text-center my-2 text-xl">Selected top Five
-                                <span class="text-blue-500" id="total-added-player">0</span>
+                            <h2 class="text-center my-2 text-xl font-['Berkshire_Swash'] text-[#FF5E19]">Selected top
+                                Five
+                                <span class="text-[#FFFFFF] text-3xl" id="total-added-player">0</span>
                             </h2>
                             <div class="overflow-x-auto">
                                 <table class="table w-full">
@@ -216,7 +225,7 @@
                     </div>
 
                     <div class="budget bg-black my-6 p-4">
-                        <h2 class="text-center mt-6 text-xl">Budget</h2>
+                        <h2 class="text-center mt-6 text-xl font-['Berkshire_Swash'] text-[#FF5E19]">Budget</h2>
 
                         <div class="pl-[40px] py-2 ">
                             <!-- per player cost -->
@@ -256,7 +265,8 @@
                                     total
                                 </button>
                                 <div class="flex py-2 justify-between  pr-[50px] ">
-                                    <span class="px-2">Total</span> <span class="text-red-500" id="total-cost"></span>
+                                    <span class="px-2">Total</span> <span class="text-[#FF5E19] font-bold"
+                                        id="total-cost"></span>
 
                                 </div>
                                 <button id="reset-btn" class="btn-sm btn btn-primary">Reset</button>
@@ -283,7 +293,7 @@
 
 
 
-    <script src=" app.js">
+    <script src="app.js">
     </script>
 </body>
 
