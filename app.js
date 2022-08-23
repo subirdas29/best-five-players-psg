@@ -50,5 +50,28 @@ function handelTotalPlayerBudget(perPlayerBudget) {
     return totalPlayerBudget;
 }
 
+// Decliaring click calculate function
+document.getElementById('calculate-btn').addEventListener('click', function () {
+
+    let PPB = parseInt(perPlayerBudget.value);
+    let isPerPlayerBudget = cheakNumber(PPB);
+
+    if (isPerPlayerBudget) {
+        handelTotalPlayerBudget(PPB);
+
+    }
+
+    else {
+        document.getElementById('error-messege').style.display = "block";
+        document.getElementById('positive-messege').style.display = "block";
+        perPlayerBudget.innerText = 0;
+        coachBudget.innerHTML = 0;
+        coachBudget.innerText = 0;
+    }
+
+
+
+});
+
 
 
