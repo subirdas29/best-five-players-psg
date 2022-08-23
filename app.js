@@ -25,4 +25,30 @@ function cheakNumber(inputValue) {
     }
 }
 
+// all value adding function
+function totalCost(totalPlayerBudget, CB, MB) {
+
+
+    let Total = MB + totalPlayerBudget + CB;
+
+    totalExpence.innerText = Total;
+}
+//update managerBudget
+function handelTotalPlayerBudget(perPlayerBudget) {
+
+    const totalPlayerBudget = perPlayerBudget * 5;
+
+
+    // playerExpenses.innerHTML = totalPlayerBudget;
+    playerExpenses.innerText = totalPlayerBudget;
+
+    if (totalPlayerBudget) {
+        document.getElementById('total-calculate').style.opacity = "1";
+
+    }
+
+    return totalPlayerBudget;
+}
+
+
 
