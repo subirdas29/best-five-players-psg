@@ -73,5 +73,48 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 });
 
+document.getElementById('total-calculate').addEventListener('click', function () {
+
+    let CB = parseInt(coachBudget.value);
+    let MB = parseInt(managerBudget.value);
+    let PPB = parseInt(perPlayerBudget.value);
+
+    let isPerPlayerBudget = cheakNumber(PPB);
+    let isCoachBudget = cheakNumber(CB);
+
+    let totalPlayerBudget = handelTotalPlayerBudget(PPB);
+
+    let isManagerBudget = cheakNumber(MB);
+
+
+
+    if (isPerPlayerBudget && isCoachBudget && isManagerBudget) {
+
+        totalCost(totalPlayerBudget, CB, MB);
+    }
+    else {
+        document.getElementById('error-manager').style.display = "block";
+        perPlayerBudget.innerText = 0;
+        coachBudget.innerHTML = 0;
+        coachBudget.innerText = 0;
+    }
+});
+
+// reset all value
+document.getElementById('reset-btn').addEventListener('click', function () {
+    perPlayerBudget.value = '';
+    coachBudget.value = '';
+    managerBudget.value = '';
+    totalExpence.innerText = 0;
+    playerExpenses.innerText = 0;
+
+
+    document.getElementById('positive-messege').style.display = "none";
+    document.getElementById('error-messege').style.display = "none";
+    document.getElementById('error-manager').style.display = "none";
+
+});
+
+
 
 
